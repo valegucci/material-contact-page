@@ -1,0 +1,151 @@
+//Material framework
+@use "@material/button/mdc-button";
+@use "@material/button";
+
+@use "@material/drawer";
+
+@use "@material/list";
+@use "@material/icon-button/styles";
+@use "@material/top-app-bar";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/card";
+@use "@material/fab";
+
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include card.core-styles;
+@include fab.core-styles;
+
+$primary_color: #2196f3;
+$secondary_color: #ff3e81;
+
+//Website styles
+@import "menu";
+@import "list-group";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #eeeeee;
+}
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+.app-bar {
+  position: absolute;
+  @include top-app-bar.fill-color($primary_color);
+}
+.foo-button {
+  @include fab.container-color($secondary_color);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.my-list {
+  position: relative;
+  @include list.deprecated-core-styles;
+}
+.main-content {
+  height: 100vh;
+  overflow-y: visible;
+  position: relative;
+  padding-left: 48px;
+  padding-top: 80px;
+}
+.contact-list-card {
+  padding: 16px;
+  &.contact-card-opened {
+    margin-right: 464px;
+  }
+  .contact-list-thumbnail {
+    width: auto;
+    height: auto;
+    margin-right: 16px;
+    border-radius: 50%;
+  }
+}
+.contact-list-divider {
+  list-style: none;
+  margin-top: 16px;
+}
+.contact-list-item {
+  margin-bottom: 8px;
+}
+
+.contact-card {
+  position: absolute;
+  top: 80px;
+  right: 19px;
+  left: auto;
+  width: 432px;
+  height: auto;
+  border-radius: 2px;
+}
+.contact-card__media {
+  background-image: url("./img/james-connors-big.png");
+}
+
+.contact-card-name {
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+}
+.contact-card-actions {
+  color: #fff;
+  position: absolute;
+  padding: 0;
+}
+.contact-card-back {
+  top: 12px;
+  left: 8px;
+}
+.contact-card-edit {
+  top: 12px;
+  right: 48px;
+}
+.contact-card-more {
+  top: 12px;
+  right: 8px;
+}
+.contact-card .list-group {
+  padding: 0 24px;
+  .number {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.1px;
+    color: #4d4d4e;
+  }
+  .number-type {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.1px;
+    color: #999999;
+  }
+}

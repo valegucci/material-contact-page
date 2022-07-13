@@ -1,0 +1,38 @@
+.list-group {
+    position: relative;
+    [aria-selected="true"]{
+      color: $primary_color;
+    }
+    .list-group-item{
+      position: relative;
+      margin-bottom: 16px;
+      list-style: none;
+      padding-left: 24px;
+      list-style: none;
+      .list-group-item-text{
+        display: inline-block;
+      }
+    }
+  }
+  .list-group-graphic {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    &.list-group-graphic__letter {
+      left: 2px;
+    }
+    &.secondary {
+      color: $secondary_color;
+    }
+    &.primary {
+      color: $primary_color;
+    }
+  }
+  .list-item-icon-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }

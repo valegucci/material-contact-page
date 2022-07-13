@@ -1,0 +1,33 @@
+.menu-header {
+    background-image: url(./img/material-design-wallpaper-1.png);
+    &:before{
+        margin-top: 160px;
+    }
+    .profile-name {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+        margin-top: 8px;
+        margin-left: 20px;
+    }
+    .profile-mail {
+        font-weight: 400;
+        color: #fff;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .photo {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin-top: 24px;
+        margin-left: 16px;
+    }
+    .profile-drop{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: #fff;
+        opacity: 0.87;
+    }
+}

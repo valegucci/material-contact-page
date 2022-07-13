@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
+    "watch": "npm-watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "npm-watch": "^0.11.0",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "watch": "^1.0.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "dependencies": {
+    "@material/button": "^14.0.0",
+    "@material/card": "^14.0.0",
+    "@material/drawer": "^14.0.0",
+    "@material/fab": "^14.0.0",
+    "@material/icon-button": "^14.0.0",
+    "@material/list": "^14.0.0",
+    "@material/top-app-bar": "^14.0.0",
+    "bootstrap": "^5.2.0-beta1"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "scss"
+      ],
+      "extensions": "scss"
+    }
+  }
+}
